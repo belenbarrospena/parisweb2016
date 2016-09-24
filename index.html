@@ -1,0 +1,874 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>DIY Mobile Usability Testing - Paris-Web 2016</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<a href="#">http://belenbarrospena.github.io/parisweb2016/</a>
+				</section>
+
+				<section data-background="resources/bernard.png">
+					<h1 style="color:#213F8E;margin-top:-35%;margin-left:-5%;text-align:left;">Bernard</h1>
+					<p style="color:#213F8E;margin-left:-5%;text-align:left;">User researcher at the UK Home Office</p>
+				</section>
+
+				<section data-background="resources/belen.png">
+					<h1 style="color:#66920D;margin-top:-35%;margin-left:-5%;text-align:left;">Belén</h1>
+					<p style="color:#66920D;margin-left:-5%;text-align:left;">Up to yesterday, <br/>Yocto Project <br/>design lead</p>
+				</section>
+
+				<section data-background-video="resources/intro.webm" data-background="#fff"></section>
+
+				<section data-transition="slide-in fade-out" data-background-transition="fade-out">
+					<h2>Usability testing</h2>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;A process that <strong style="font-size:1.3em;color:#fff;">employs people</strong> as testing participants who are representative of the target audience <strong style="font-size:1.3em;color:#fff;">to evaluate</strong> the degree to which a <strong style="font-size:1.3em;color:#fff;">product</strong> meets specific <strong style="font-size:1.3em;color:#fff;">usability</strong> criteria.&rdquo;
+					</p>
+					<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470185481.html" style="font-size:0.6em;margin-top:3em;">Handbook of usability testing 2nd Ed., J. Rubin and D. Chisnell</a>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2 style="color:#333;">Usability testing</h2>
+					<p style="font-size:1.15em;color:#333;">
+						&ldquo;A process that <strong style="font-size:1.6em;color:#fff;">employs people</strong> as testing participants who are representative of the target audience <strong style="font-size:1.3em;">to evaluate</strong> the degree to which a <strong style="font-size:1.3em;">product</strong> meets specific <strong style="font-size:1.3em;">usability</strong> criteria.&rdquo;
+					</p>
+					<p style="font-size:0.6em;color:#333;margin-top:3em;">Handbook of usability testing 2nd Ed., J. Rubin and D. Chisnell</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Please, stand up</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Take out your mobile phone</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Sit down if you don't have a French mobile with a data plan</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Sit down if you don't speak English</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Sit down if you don't like beer</p>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Sit down if you are absolutely terrified by the idea of being our test subject</p>
+				</section>
+
+				<section data-background-video="resources/usability-test-blurred.webm" data-background="#fff"></section>
+
+				<section>
+					<h2>Why recording?</h2>
+					<ul>
+						<li>Memory aid</li>
+						<li>Powerful communication tool</li>
+					</ul>
+				</section>
+
+				<section data-background="resources/actions-reactions-blurred.png"></section>
+
+				<section data-background="resources/dutmut.png"></section>
+
+				<section data-background="resources/blackboard.png"></section>
+
+				<section data-transition="slide-in fade-out" data-background-transition="fade-out">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;">Which phone?</li>
+						<li style="margin-bottom:.5em;">Which context?</li>
+						<li>Which connection?</li>
+					</ul>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;">Which phone?</li>
+						<li style="margin-bottom:.5em;color:#333;">Which context?</li>
+						<li style="color:#333;">Which connection?</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide-in fade-out" data-background-transition="fade-out">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr>
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr>
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr style="color:#E39C09;">
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr>
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr>
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-background="resources/featurephone.png"></section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr style="color:#E39C09;">
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr>
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr>
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr style="color:#E39C09;">
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr>
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-background="resources/smartphone.png" class="fit-img"></section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr style="color:#E39C09;">
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr>
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr>
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr style="color:#E39C09;">
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section data-background="resources/touchphone.png"></section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<h2>Web task success rates</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Feature phones</td>
+								<td>38%</td>
+							</tr>
+							<tr>
+								<td>Smartphones</td>
+								<td>55%</td>
+							</tr>
+							<tr style="color:#E39C09;">
+								<td>Touch phones</td>
+								<td>75%</td>
+							</tr>
+						</tbody>
+					</table>
+					<a style="font-size:0.6em;" href="http://www.useit.com/alertbox/mobile-usability-study-1.html">Mobile usability, Alertbox 20th July 2009</a>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Handset usability affects test results</p>
+				</section>
+
+				<section>
+					<h2>Remember</h2>
+					<ul>
+						<li>Test with participants' own phones</li>
+						<li>If not possible, include training and warm-up tasks</li>
+					</ul>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;">Which phone?</li>
+						<li style="margin-bottom:.5em;color:#333;">Which context?</li>
+						<li style="color:#333;">Which connection?</li>
+					</ul>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;color:#333;">Which phone?</li>
+						<li style="margin-bottom:.5em;">Which context?</li>
+						<li style="color:#333;">Which connection?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Field vs Lab</h1>
+					<img src="resources/fieldvslab2.png"/>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;The results show that <strong style="font-size:1.2em;color:#fff;">the added value of</strong> conducting usability <strong style="font-size:1.2em;color:#fff;">evaluations in the field is very little</strong> and that recreating central aspects of the use context in a laboratory setting enables the identification of the same usability problem list.&rdquo;
+					</p>
+					<a href="http://people.cs.aau.dk/~jesper/pdf/papers/MobileHCI04-final.pdf" style="font-size:0.6em;">Is it Worth the Hassle? </br>Exploring the Added Value of Evaluating the Usability of Context-Aware Mobile Systems in the Field</br>J. Kjeldskov, M. B. Skov, B. S. Als, R. T. Høegh, 2004</a>
+				</section>
+
+				<section>
+					<h1>Field 0 - Lab 1</h1>
+					<img src="resources/fieldvslab2.png"/>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;According to our study <strong style="font-size:1.2em;color:#fff;">there was no difference</strong> in the number of problems that occurred <strong style="font-size:1.2em;color:#fff;">in the two test settings</strong>. Our hypothesis that more problems would be found in the field was not supported.&rdquo;
+					</p>
+					<a href="http://uxpajournal.org/wp-content/uploads/pdf/mobile.pdf" style="font-size:0.6em;">Usability Testing of Mobile Applications: A Comparison between Laboratory and Field Testing</br>A. Kaikkonen, T. Kallio, A. Kekäläinen, A. Kankainen, M. Cankar - Journal of Usability Studies, 2005</a>
+				</section>
+
+				<section>
+					<h1>Field 0 - Lab 2</h1>
+					<img src="resources/fieldvslab2.png"/>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;Evaluations conducted in <strong style="font-size:1.2em;color:#fff;">field</strong> settings <strong style="font-size:1.2em;color:#fff;">can reveal problems not</strong> otherwise <strong style="font-size:1.2em;color:#fff;">identified in laboratory</strong> evaluations.&rdquo;
+					</p>
+					<a href="http://dl.acm.org/citation.cfm?id=1182504" style="font-size:0.6em;">It’s Worth the Hassle! The Added Value of Evaluating the Usability of Mobile Systems in the Field</br>C.M. Nielsen, M. Overgaard, M.B. Pedersen, J. Stage, S. Stenild - NordiCHI 2006</a>
+				</section>
+
+				<section>
+					<h1>Field 1 - Lab 2</h1>
+					<img src="resources/fieldvslab2.png"/>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;The analysis of the comparison between usability testing done in two different settings revealed that <strong style="font-size:1.2em;color:#fff;">there were</strong> many <strong style="font-size:1.2em;color:#fff;">more</strong> types and occurrences of <strong style="font-size:1.2em;color:#fff;">usability problems found in the field</strong> than in the laboratory. Those problems discovered tend to be critical issues.&rdquo;
+					</p>
+					<a href="http://dl.acm.org/citation.cfm?id=1152254" style="font-size:0.6em;">Usability Evaluation of Mobile Device: a Comparison of Laboratory and Field Tests</br>H.B Duh, G. C. B. Tan, V. H. Chen, MobileHCI 2006</a>
+				</section>
+
+				<section>
+					<h1>Field 2 - Lab 2</h1>
+					<img src="resources/fieldvslab2.png"/>
+				</section>
+
+				<section data-background="resources/confusedandhappy.jpg"></section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;testing in the field requires <strong style="font-size:1.2em;color:#fff;">double the time</strong> in comparison to the laboratory.&rdquo;
+					</p>
+					<a href="http://uxpajournal.org/wp-content/uploads/pdf/mobile.pdf" style="font-size:0.6em;">Usability Testing of Mobile Applications: A Comparison between Laboratory and Field Testing</br>A. Kaikkonen, T. Kallio, A. Kekäläinen, A. Kankainen, M. Cankar - Journal of Usability Studies, 2005</a>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;evaluations in the field (are) more <strong style="font-size:1.2em;color:#fff;">complex</strong> and <strong style="font-size:1.2em;color:#fff;">time-consuming</strong>&rdquo;
+					</p>
+					<a href="http://dl.acm.org/citation.cfm?id=1182504" style="font-size:0.6em;">It’s Worth the Hassle! The Added Value of Evaluating the Usability of Mobile Systems in the Field</br>C.M. Nielsen, M. Overgaard, M.B. Pedersen, J. Stage, S. Stenild - NordiCHI 2006</a>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;field-based usability studies are <strong style="font-size:1.2em;color:#fff;">not easy</strong> to conduct. They are <strong style="font-size:1.2em;color:#fff;">time-consuming</strong>&rdquo;
+					</p>
+					<a href="http://people.cs.aau.dk/~jesper/pdf/papers/MobileHCI04-final.pdf" style="font-size:0.6em;">Is it Worth the Hassle? </br>Exploring the Added Value of Evaluating the Usability of Context-Aware Mobile Systems in the Field</br>J. Kjeldskov, M. B. Skov, B. S. Als, R. T. Høegh, 2004</a>
+				</section>
+
+				<section>
+					<p style="font-size:2em;">Testing in the lab is better than no testing</p>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;there is still no definite answer to the lab versus field question (...) <strong style="font-size:1.2em;color:#fff;">the real question is</strong> not if - but <strong style="font-size:1.2em;color:#fff;">when  and how</strong> - to <strong style="font-size:1.2em;color:#fff;">go into the field.</strong>&rdquo;
+					</p>
+					<a href="http://people.cs.aau.dk/~jesper/pdf/conferences/Kjeldskov-C80.pdf" style="font-size:0.6em;">Was it Worth the Hassle? </br>Ten Years of Mobile HCI Research Discussions on Lab and Field Evaluations</br>J. Kjeldskov and M.B. Skov, MobileHCI 2014</a>
+				</section>
+
+				<section>
+					<h2>Remember</h2>
+					<ul>
+						<li>For most software, lab testing is fine</li>
+						<li>If you must do field testing:
+							<ul>
+								<li>Do it late</li>
+								<li>Plan and run pilot tests</li>
+								<li>Be prepared for the unexpected</li>
+								<li>"Embrace the wilderness" (Kjeldskov & Skov 2014)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;color:#333;">Which phone?</li>
+						<li style="margin-bottom:.5em;">Which context?</li>
+						<li style="color:#333;">Which connection?</li>
+					</ul>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<ul style="font-size:2em;list-style:none;">
+						<li style="margin-bottom:.5em;color:#333">Which phone?</li>
+						<li style="margin-bottom:.5em;color:#333">Which context?</li>
+						<li>Which connection?</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="resources/connectiontroubles.png"/>
+				</section>
+
+				<section data-background="resources/highlands.png"></section>
+
+				<section>
+					<p style="font-size:2em;">Do not assume flawless connectivity</p>
+				</section>
+
+				<section>
+					<h2>Remember</h2>
+					<ul>
+						<li>Do NOT test over WiFi</li>
+						<li>Cover participants' data costs</li>
+					</ul>
+				</section>
+
+				<section data-background="resources/blackboard2.png"></section>
+
+				<section data-background="resources/thesmalldetail.png"></section>
+
+				<section data-background="resources/thesmalldetail2.png"></section>
+
+				<section>
+					<h2>Why recording?</h2>
+					<ul>
+						<li>Memory aid</li>
+						<li>Powerful communication tool</li>
+					</ul>
+				</section>
+
+				<section>
+					<p style="color:#c3c3c3;"><strong style="font-size:1.5em;color:#fff;">4 approaches</strong><span style="font-size:1.3em;"> to the small</span><span style="font-size:1.1em;"> detail of</span><span style="font-size:0.9em;"> how on earth</span><span style="font-size:0.8em;"> are you going</span><span style="font-size:0.7em;"> to record</span><span style="font-size:0.6em;"> the whole</span><span style="font-size:0.5em;"> thing</span></p>
+				</section>
+
+				<section>
+					<h2>1. Wearable equipment</h2>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<img src="resources/wearableequipment.png"/>
+					<p><a href="http://www.itc.nl/library/papers_2007/msc/gfm/delikostidis.pdf" style="font-size:0.6em;">Methods and techniques for field-based usability testing of mobile geo-applications<br/>I. Delikostidis (2007)</a></p>
+				</section>
+
+				<section data-transition="fade" data-background-transition="fade">
+					<img src="resources/wearableequipment2.png"/>
+					<p><a href="http://www.itc.nl/library/papers_2007/msc/gfm/delikostidis.pdf" style="font-size:0.6em;">Methods and techniques for field-based usability testing of mobile geo-applications<br/>I. Delikostidis (2007)</a></p>
+				</section>
+
+				<section>
+					<img src="resources/wearableequipment3.png" width="140%"/>
+					<a href="http://lib.tkk.fi/Diss/2009/isbn9789522481900/article9.pdf" style="font-size:0.6em;">Will Laboratory Test Results be Valid in Mobile Contexts? </br>
+						A. Kaikkonen, A. Kekäläinen, M. Cankar, T. Kallio, A. </a>
+				</section>
+
+				<section>
+					<img src="resources/wearableequipment4.png" width="60%"/>
+					<p><a href="http://vbn.aau.dk/files/63165333/Kjeldskov_B3_preprint.pdf" style="font-size:0.6em;">A Field Laboratory for Evaluating in Situ <br/> R. T. Høegh, J. Kjeldskov, M. B. Skov, J. Stage, 2011</a></p>
+				</section>
+
+				<section>
+					<h2>Great because ...</h2>
+					<p style="font-size:2em;">Allows testing in the field</p>
+				</section>
+
+				<section>
+					<h2>But ...</h2>
+					<ul>
+						<li>Difficult and time-consuming to set up</li>
+						<li>Intrusive, uncomfortable and heavy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>2. Screen capture</h2>
+				</section>
+
+				<section>
+					<h2>Mirroring</h2>
+					<img src="resources/reflector.png">
+				</section>
+
+				<section>
+					<h2>Recording</h2>
+					<img src="resources/uxrecorder.png">
+				</section>
+
+				<section>
+					<h2>Recording</h2>
+					<img src="resources/uxtester.png">
+				</section>
+
+				<section>
+					<h2>Great because ...</h2>
+					<p style="font-size:2em;">High quality screen footage</p>
+				</section>
+
+				<section>
+					<h2>But ...</h2>
+					<ul>
+						<li>Imposes device constraints</li>
+						<li>You lose the finger context</li>
+					</ul>
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;Screen recording software rarely provides finger footage (...) recording with an <strong style="font-size:1.2em;color:#fff;">external camera is</strong> still the <strong style="font-size:1.2em;color:#fff;">preferred</strong> method&rdquo;
+					</p>
+					<a href="https://www.nngroup.com/articles/mobile-usability-testing/" style="font-size:0.6em;">Usability Testing for Mobile is Easy</br>R. Budiu, Nielsen Norman Group (2014)</a>
+				</section>
+
+				<section>
+					<h2>3. Document cameras</h2>
+				</section>
+
+				<section>
+					<img src="resources/document-camera.png" width="50%">
+					<p><a href="https://www.amazon.com/Handheld-Usability-Scott-Weiss/dp/0470844469" style="font-size:0.6em;">Handheld Usability, S. Weiss (2002) p174</a></p>
+				</section>
+
+				<section>
+					<img src="resources/google-document-camera.png">
+					<p><a href="https://static.aminer.org/pdf/PDF/000/091/220/towards_the_perfect_infrastructure_for_usability_testing_on_mobile_devices.pdf" style="font-size:0.6em;">Towards the Perfect Infrastructure for Usability Testing on Mobile Devices<br/>R. Schusteritsch, C.Y. Wei, M. LaRosa - Google (CHI 2007)</a></p>
+				</section>
+
+				<section>
+					<img src="resources/nn-document-camera.png" width="55%">
+					<p><a href="https://www.nngroup.com/articles/mobile-usability-testing/" style="font-size:0.6em;">Usability Testing for Mobile is Easy</br>R. Budiu, Nielsen Norman Group (2014)</a></p>
+				</section>
+
+				<section>
+					<h2>Great because ...</h2>
+					<p style="font-size:2em;">Good recording quality with easy setup process</p>
+				</section>
+
+				<section data-background="resources/elmocam-price.png"></section>
+
+				<section data-background="resources/point2view.png"></section>
+
+				<section data-background="resources/ziggihd.png"></section>
+
+				<section>
+					<h2>But ...</h2>
+					<ul>
+						<li>Participants must keep within the camera range</li>
+					</ul>
+				</section>
+
+				<section data-background="resources/camrange.png"></section>
+
+				<section>
+					<h2>But ...</h2>
+					<ul>
+						<li>Participants must keep within the camera range</li>
+						<li>Phone must lay on a desk or be hold at a flat angle</li>
+					</ul>
+				</section>
+
+				<section data-background="resources/looking_at_phone.jpg"></section>
+
+				<section>
+					<h2>4. Mounted devices</h2>
+				</section>
+
+				<section>
+					<h2>Ready-made</h2>
+					<img src="resources/noldus.jpg" width="36%">
+					<a href="http://www.noldus.com/human-behavior-research/accessories/mobile-device-camera-mdc" style="display:block;font-size:0.6em;">Noldus Mobile Device Camera</a>
+				</section>
+
+				<section>
+					<h2>DIY</h2>
+					<img src="resources/early-rigs.png" style="border:solid 9px #fff;">
+				</section>
+
+				<section data-background="resources/new-rigs.png"></section>
+
+				<section>
+					<h2>Great because ...</h2>
+					<p style="font-size:2em;">It allows natural interaction with the mobile device</p>
+				</section>
+
+				<section data-background="resources/expensive-rig.png"></section>
+
+				<section data-background="resources/mrtappy.png" data-state="fit-img"></section>
+
+				<section>
+					<h2>But ...</h2>
+					<ul>
+						<li>Messy to build</li>
+						<li>If bulky they can prevent single-handed use</li>
+						<li>If heavy they can be tiring for participants</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>The ideal recording setup</h2>
+					<ul>
+						<li class="fragment">Easy to put together</li>
+						<li class="fragment">Cheap</li>
+						<li class="fragment">Repeatable</li>
+						<li class="fragment">Allows holding the device</li>
+						<li class="fragment">Allows one-handed use</li>
+						<li class="fragment">Supports all form factors</li>
+						<li class="fragment">Runs tests with participants' phones</li>
+						<li class="fragment">Captures screen, face and fingers</li>
+						<li class="fragment">Gives enough video quality</li>
+					</ul>
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/comparison_table.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/comparison_table2.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/comparison_table3.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/comparison_table4.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="resources/thespirit.png" data-state="fit-img">
+					<a href="https://www.wired.com/2010/07/the-pencil-ipad-stand-smart-enough-to-impress-a-new-yorker/" style="display:block;font-size:0.6em;margin-top:70%;">The Pencil iPad stand</a>
+				</section>
+
+				<section data-background="resources/ingredients.png"></section>
+
+				<section data-background="resources/trunions.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">2 Meccano trunions</p>
+				</section>
+
+				<section data-background="resources/meccano_strips.png">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">Two 5, 6 and 7-hole Meccano strips</p>
+				</section>
+
+				<section data-background="resources/11-hole-strip.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">One 11-hole Meccano strip</p>
+				</section>
+
+				<section data-background="resources/meccano_screws.png">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">Six Meccano screws &amp; nuts</p>
+				</section>
+
+				<section data-background="resources/jubilee-clip.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">One 13-20mm jubilee clip</p>
+				</section>
+
+				<section data-background="resources/hue-webcam.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">One HUE HD webcam</p>
+				</section>
+
+				<section data-background="resources/second-webcam.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">A second USB webcam</p>
+				</section>
+
+				<section data-background="resources/usb-cable.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">A USB male to female extension cable</p>
+				</section>
+
+				<section data-background="resources/bluetack.jpg">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">Some Blu Tack</p>
+				</section>
+
+				<section data-background="resources/allen_key.png">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">An allen key</p>
+				</section>
+
+				<section data-background="resources/meccano_wrench.png">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">A Meccano wrench</p>
+				</section>
+
+				<section data-background="resources/screwdriver.png">
+					<p class="hljs" style="margin-top:-35%;font-size:1.2em;color:#F2CD10;">A screwdriver</p>
+				</section>
+
+				<section data-background="resources/acomputer.png">
+					<p class="hljs" style="margin-top:60%;font-size:1.2em;color:#F2CD10;">A computer (t'is Linux today)</p>
+				</section>
+
+				<section data-background="resources/guvcview.png">
+					<p class="hljs" style="margin-top:60%;font-size:1.2em;color:#F2CD10;">Webcam app (GUVCView)</p>
+				</section>
+
+				<section data-background="resources/recordmydesktop.png">
+					<p class="hljs" style="margin-top:60%;font-size:1.2em;color:#F2CD10;">Screen recording software (recordMyDesktop)</p>
+				</section>
+
+				<section data-background="resources/finished-bracket-touched.jpg"></section>
+
+				<section>
+					<h2>A task</h2>
+					<p>After her talk, Belén must rush to the airport to catch a flight. Using the Paris Airports website (<a href="http://www.parisaeroport.fr">www.parisaeroport.fr</a>), can you tell her how much money will a taxi cost? She is going from the conference venue in 2 place Émile Cresp to Charles de Gaulle terminal 2C.</p>
+				</section>
+
+				<section>
+					<h1>How was that?</h1>
+				</section>
+
+				<section data-background="resources/finished-bracket-touched.jpg"></section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/easy.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/easy-green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/cheap.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff">
+					<img src="resources/price.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff">
+					<h1>73.00 EUR</h1>
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/cheap-green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/repeatable.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="resources/amazon-hue.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/second-webcam.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/amazon_usb.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/meccanospares.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/bqclips.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/bqblutack.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="resources/bqscrewdriver.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/repeatable-green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/holding_one_handed.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section>
+					<h1>125 grams</h1>
+					<ul>
+						<li>An iPhone 7 weighs 138 grams</li>
+						<li>A 9.7-inch iPad Pro weighs 437 grams</li>
+						<li>I weigh 55,000 grams</li>
+						<li>A blue whale weighs 136,400,000 grams</li>
+					</ul>
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/holding_one_handed_green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/form.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/crazy_hardware.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="resources/black_box.png" data-state="fit-img" data-background-transition="slide"></section>
+
+				<section data-background="#fff">
+					<img src="resources/phone_widths.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/form-green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/participants_phones.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/participants_phones_green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/final-items.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section data-background-video="resources/task-edited.webm" data-background="#fff"></section>
+
+				<section data-background="#fff" data-transition="fade" data-background-transition="fade">
+					<img src="resources/final_items_green.png" style="border:none;box-shadow:none;">
+				</section>
+
+				<section>
+					<p style="font-size:1.15em;color:#c3c3c3;">
+						&ldquo;We expect much of our buildings: they need to have firm foundations, solid structures, pleasing aesthetics. <strong style="font-size:1.2em;color:#fff;">We should expect the same of emerging mobile systems</strong>&rdquo;
+					</p>
+					<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-EHEP000932.html" style="font-size:0.6em;">Mobile Interaction Design</br>M. Jones and G. Marsden (2005)</a>
+				</section>
+
+				<section>
+					<h1>Credits</h1>
+					<ul>
+						<li>Slide 42: <a href="https://www.flickr.com/photos/morganmorgan/10334260286/">Confused</a> by <a href="https://www.flickr.com/photos/morganmorgan/">iwishmynamewasmarsha</a> <br/>License: <a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC BY-NC 2.0</a></li>
+						<li>Slide 85: <a href="https://www.flickr.com/photos/68532869@N08/17468693762/">Person looking at smartphone in the dark</a> by <a href="https://www.flickr.com/photos/68532869@N08/">Japanexperterna.se</a> <br/>License: <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
+					<p>
+						<a href="mailto:belenbarrospena@gmail.com">belenbarrospena@gmail.com</a>
+						|
+						<a href="https://twitter.com/belenpena/">@belenpena</a>
+					</p>
+					<p>
+						<a href="mailto:bernard@ei8fdb.org">bernard@ei8fdb.org</a>
+						|
+						<a href="https://twitter.com/bernardtyers">@bernardtyers</a>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
