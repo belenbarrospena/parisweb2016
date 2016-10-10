@@ -145,9 +145,7 @@ This is how it looks like: absolutely ridiculous. But guess what? It works! And 
 
 We are almost done. The only thing left is to see how our DIY recording gizmo fares when checked against the ideal recording set up.
 
-The ideal thing should be easy to put together. If Bernard can do it here in front of you, it sure must be easy. To make it even easier, we have made a video with instructions.
-
-[LINK TO VIDEO]
+The ideal thing should be easy to put together. If Bernard can do it here in front of you, it sure must be easy. To make it even easier, we have made a [video with instructions](https://t.co/u0S1C7wXEA)
 
 So, green ball.
 
