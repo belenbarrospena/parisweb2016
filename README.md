@@ -22,7 +22,7 @@ And now, my beautiful assistant is going to choose the lucky one between you.
 
 Wonderful. Now that we have a victim ... I mean, a participant, let's go back to this usability testing business. The definition is full of big words but the idea behind it is quite simple. It goes pretty much like this. You pick someone who looks like might want to use your software. And you put them in front of whatever you have of that software: drawings on paper, an interactive prototype, an alpha version, the thing that you already released. Whatever you have. And you ask that person to do something with the software. And you watch ... as they struggle to do even the simplest things. You learn tons from that.
 
-This is how a usability testing session looks like. The blurry bit is the participant's face, which we have hidden for privacy reason. You can't see his face, but he was mightily confused with the prototype he was trying, the poor thing.
+This is how a usability testing session looks like. The blurry bit is the participant's face, which we have hidden for privacy reasons. You can't see his face, but he was mightily confused with the prototype he was trying, the poor thing.
 
 So, as you can see, we record our usability testing sessions. And we do that for 2 reasons. 1) Because video footage allows us to go back to what happened during the session and clarify any doubts we might have. And 2) because video footage constitutes unequivocal evidence of the existence of usability issues. Even the most recalcitrant teams will concede defeat when confronted with actual people failing to do things with the software they are building.
 
