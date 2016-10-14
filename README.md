@@ -1,8 +1,36 @@
-# DIY Mobile Usability Testing (Paris-Web 2016)
+# DIY Mobile Usability Testing 
 
 ## What is this?
 
-This is the "script" we used for the talk. Writing it down helps us prepare.
+The "DIY Mobile Usability Testing" project started back in 2009. We set out to prove that running usability studies for mobile software doesn't need to be difficult or expensive, it can be done by anybody, and it is a lot of fun! 
+
+The project has 2 parts:
+
+1. It lists some basic principles and rules of thumb for planning usability studies with mobile devices
+2. It provides clear instructions on how to capture video footage of usability testing sessions with mobile devices
+
+We deliver the content as a workshop or presentation. So far, we have been to:
+
+* Over the Air (2010)
+* EuroIA (2010)
+* IA Summit (2011)
+* UX Sofia (2012)
+* South by Southwest Interactive (2012)
+* UX Spain (2013)
+* MozFest (2014)
+* FOSDEM (2015)
+* ParisWeb (2016)
+
+This repository contains the latest version of the presentation (the one for ParisWeb 2016), and this README includes the "script" we used for the talk.
+
+## Who are we?
+
+* Belén Barros Pena (belenbarrospena at gmail dot com)
+* Bernard Tyers (bernard at ei8fdb dot org)
+
+## The license
+
+Creative Commons Attribution-ShareAlike ([CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/))
 
 ## The script
 
